@@ -22,6 +22,9 @@ namespace MultiSelectionDragger
         public MainWindow()
         {
             InitializeComponent();
+            DataContext = this;
         }
+
+        public string[] Items { get { return new[] { "Foo", "Bar", "Baz", "Muh", "Blah" }; } }
     }
 }
