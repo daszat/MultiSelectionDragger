@@ -1,12 +1,13 @@
 ﻿<Window x:Class="MultiSelectionDragger.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:self="clr-namespace:MultiSelectionDragger"
         Title="MainWindow" Height="350" Width="525">
     <UniformGrid Columns="2">
-        <ListBox x:Name="List"
-                 Margin="10" 
-                 ItemsSource="{Binding Items, Mode=OneWay}"
-                 SelectionMode="Extended"/>
+        <self:ListBoxEx x:Name="List"
+                        Margin="10"
+                        ItemsSource="{Binding Items, Mode=OneWay}"
+                        SelectionMode="Extended"/>
         <TextBox Margin="10"
                  Text="Drop here"/>
     </UniformGrid>
