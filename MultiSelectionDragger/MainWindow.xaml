@@ -3,7 +3,8 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="MainWindow" Height="350" Width="525">
     <UniformGrid Columns="2">
-        <ListBox Margin="10" 
+        <ListBox x:Name="List"
+                 Margin="10" 
                  ItemsSource="{Binding Items, Mode=OneWay}"
                  SelectionMode="Extended"/>
         <TextBox Margin="10"
